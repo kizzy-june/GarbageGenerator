@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="GarbageGenerator:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/GarbageGenerator_jar</output-path>
+    <root id="archive" name="GarbageGenerator.jar">
+      <element id="module-output" name="GarbageGenerator" />
+    </root>
+  </artifact>
+</component>

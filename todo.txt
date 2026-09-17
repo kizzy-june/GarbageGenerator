@@ -1,0 +1,2 @@
+- Better variable names
+- Idk I forgot
