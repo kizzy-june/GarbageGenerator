@@ -15,7 +15,6 @@ public final class GarbageGeneratorMain {
       final JFrame window = new JFrame("Garbage text generator :3");
       window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
       window.setSize(1920 / 2, 1080 / 2);
-      window.setResizable(true);
       window.setLocationRelativeTo(null);
       JTextArea textArea = new JTextArea("");
       textArea.setLineWrap(true);
