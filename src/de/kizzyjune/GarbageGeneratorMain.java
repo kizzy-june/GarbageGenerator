@@ -16,7 +16,7 @@ public final class GarbageGeneratorMain {
       window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
       window.setSize(1920 / 2, 1080 / 2);
       window.setLocationRelativeTo(null);
-      JTextArea textArea = new JTextArea("");
+      final JTextArea textArea = new JTextArea("");
       textArea.setLineWrap(true);
       window.add(textArea);
       window.setResizable(false);
@@ -50,7 +50,7 @@ public final class GarbageGeneratorMain {
             current++;
         }
       Thread.sleep(2000);
-      debugThrowable("none",textArea);
+      debugThrowable("error",textArea);
       setFont(textArea,"F25_Bank_Printer");
       clearText(textArea);
       setTextTypewriterEffect("GarbageGenerator.exit();",textArea);
@@ -68,7 +68,7 @@ public final class GarbageGeneratorMain {
         System.exit(0);
     }
     private static void setTextTypewriterEffect(final String text, final JTextArea textArea) {
-        char[] chars = text.toCharArray();
+        final char[] chars = text.toCharArray();
         final short length = (short) chars.length;
         short index = 0;
         while (index != length) {
@@ -134,6 +134,14 @@ public final class GarbageGeneratorMain {
             Thread.sleep(Integer.MAX_VALUE);
         } catch (InterruptedException ignored) {
         }
+        clearText(textArea);
+        setTextTypewriterEffect("There's no way you waited this long",textArea);
+        try {
+            Thread.sleep(Integer.MAX_VALUE);
+        } catch (InterruptedException ignored) {
+        }
+        IO.println("ok bruh");
+        System.exit(1);
     }
     @SuppressWarnings("SameParameterValue")
     private static void debugThrowable(final String throwableName, final JTextArea textArea) {
