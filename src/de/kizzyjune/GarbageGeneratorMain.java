@@ -43,7 +43,7 @@ public final class GarbageGeneratorMain {
                 'ø', 'ù', 'ú', 'û'
       };
       short current = 0;
-      while (current != 1420) {
+      while (current != 1050) {
             char rndmChar = chars[ThreadLocalRandom.current().nextInt(0,chars.length)];
             textArea.append(String.valueOf(rndmChar));
             Thread.sleep(5);
