@@ -50,7 +50,7 @@ public final class GarbageGeneratorMain {
             current++;
         }
       Thread.sleep(2000);
-      debugThrowable("error",textArea);
+      debugThrowable("none",textArea);
       setFont(textArea,"F25_Bank_Printer");
       clearText(textArea);
       setTextTypewriterEffect("GarbageGenerator.exit();",textArea);
