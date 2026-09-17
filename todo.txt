@@ -1,2 +1,4 @@
 - Better variable names
 - Idk I forgot
+- Update fonts to OTFs, I know that F25 Bank Printer has an OTF version, but idk about Halogen
+- Check if things that could be final aren't final
