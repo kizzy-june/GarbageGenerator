@@ -1,0 +1,6 @@
+Latest changes:
+- Replaced TTF with OTF fonts
+- Added system that allows set font calls to use spaces instead of underscores
+- Added debug mode, more to that in later versions
+- notErrorNorException in the throwable handler is now called justThrowable
+- Idk did I do anything else? I don't think so
